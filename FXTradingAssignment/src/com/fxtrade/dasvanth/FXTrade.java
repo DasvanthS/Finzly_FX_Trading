@@ -15,7 +15,7 @@ public class FXTrade{
 	private static Map<String, Double> CURRENCY_RATE = new HashMap<>(); 
 	static {
 		CURRENCY_RATE.put("USDINR", 66.00);
-    }
+    	}
 	public static double RATE = CURRENCY_RATE.get("USDINR");
 	private static String CURRENCY = "USDINR";
 	private static List<Trade> TRADES = new ArrayList<>();
@@ -57,7 +57,7 @@ public class FXTrade{
 		if(input.equals("") || input.equals(null) || input.equals(".")) {
 			return false;
 		}
-	    String regex = "^[a-zA-Z ]+[.]*$";
+	    String regex = "^[a-zA-Z]+[a-zA-Z ]+[.]*$";
         return input.matches(regex);
 	}
 	
