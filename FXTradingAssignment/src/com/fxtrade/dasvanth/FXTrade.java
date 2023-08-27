@@ -71,8 +71,7 @@ public class FXTrade{
 	    // Customer Name
 	    do {
 	        System.out.println("Enter Customer Name");
-	        customerName = scan.next();
-	        scan.nextLine();
+	        customerName = scan.nextLine();
 
 	        if (!isValidString(customerName)) {
 	            System.out.println("Invalid Input. Name must be a String.");
